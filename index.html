@@ -1,0 +1,816 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32-0eb832bc.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-96x96-6f017c9d.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16-1eb073ae.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab-3a9a9fce.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Drone Building 101</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <link href="/stylesheets/all-f8f49e37.css" rel="stylesheet" />
+    <script src="/javascripts/all-90db7a91.js"></script>
+  </head>
+
+  <body class="index">
+    <nav class='navbar navbar-default navbar-fixed-top' id='top' role='navigation'>
+  <div class='container'>
+    <div class='navbar-header'>
+      <div class='navbar-brand'>
+        <a href='/'>
+          <img src="/images/airfield-128-c8e1709c.png" alt="Airfield 128" />
+        </a>
+      </div>
+      <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+    </div>
+    <div class='navbar-collapse collapse' id='navbar'>
+      <ul class='nav navbar-nav sections'>
+        <li>
+          <a class='section' href='#frame'>
+            <img src="/images/banner/frame-b0681660.png" alt="Frame" />
+            <div class='text'>Frame</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#flight-controller'>
+            <img src="/images/banner/flight-controller-b4d2f999.png" alt="Flight controller" />
+            <div class='text'>Flight Controller</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#batteries'>
+            <img src="/images/banner/batteries-875386dd.png" alt="Batteries" />
+            <div class='text'>Batteries</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#escs'>
+            <img src="/images/banner/escs-b1b3449f.png" alt="Escs" />
+            <div class='text'>ESCs</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#props'>
+            <img src="/images/banner/props-5e932fa6.png" alt="Props" />
+            <div class='text'>Props</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#motors'>
+            <img src="/images/banner/motors-45a546b2.png" alt="Motors" />
+            <div class='text'>Motors</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#rx'>
+            <img src="/images/banner/rx-84d25db2.png" alt="Rx" />
+            <div class='text'>Radio Receiver</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#tx'>
+            <img src="/images/banner/tx-d2747950.png" alt="Tx" />
+            <div class='text'>Radio Transmitter</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#fpv-gear'>
+            <img src="/images/banner/camera-3bee6774.png" alt="Camera" />
+            <div class='text'>FPV Gear</div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#fpv-gear'>
+            <img src="/images/banner/antenna-7011535c.png" alt="Antenna" />
+            <div class='text'></div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#fpv-gear'>
+            <img src="/images/banner/vtx-d6f3c2fd.png" alt="Vtx" />
+            <div class='text'></div>
+          </a>
+        </li>
+        <li>
+          <a class='section' href='#hd-camera'>
+            <img src="/images/banner/xiaomi-de36ae0c.png" alt="Xiaomi" />
+            <div class='text'>HD Camera</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class='container'>
+  <section class='text-center' id='headline'>
+    <img src="/images/airfield-text-6cf72a73.svg" alt="Airfield text" />
+    <div class='tag'>
+      Drone Building 101
+    </div>
+  </section>
+  <section id='all-parts'>
+    <a class='frame' href='#frame'>
+      <img src="/images/banner/frame-b0681660.png" alt="Frame" />
+      <div class='text'>Frame</div>
+    </a>
+    <a class='flight-controller' href='#flight-controller'>
+      <img src="/images/banner/flight-controller-b4d2f999.png" alt="Flight controller" />
+      <div class='text'>Flight Controller</div>
+    </a>
+    <a class='batteries' href='#batteries'>
+      <img src="/images/banner/batteries-875386dd.png" alt="Batteries" />
+      <div class='text'>Batteries</div>
+    </a>
+    <a class='escs' href='#escs'>
+      <img src="/images/banner/escs-b1b3449f.png" alt="Escs" />
+      <div class='text'>ESCs</div>
+    </a>
+    <a class='props' href='#props'>
+      <img src="/images/banner/props-5e932fa6.png" alt="Props" />
+      <div class='text'>Props</div>
+    </a>
+    <a class='motors' href='#motors'>
+      <img src="/images/banner/motors-45a546b2.png" alt="Motors" />
+      <div class='text'>Motors</div>
+    </a>
+    <a class='rx' href='#rx'>
+      <img src="/images/banner/rx-84d25db2.png" alt="Rx" />
+      <div class='text'>Radio Receiver</div>
+    </a>
+    <a class='tx' href='#tx'>
+      <img src="/images/banner/tx-d2747950.png" alt="Tx" />
+      <div class='text'>Radio Transmitter</div>
+    </a>
+    <a class='camera' href='#fpv-gear'>
+      <img src="/images/banner/camera-3bee6774.png" alt="Camera" />
+      <div class='text'>FPV Gear</div>
+    </a>
+    <a class='antenna' href='#fpv-gear'>
+      <img src="/images/banner/antenna-7011535c.png" alt="Antenna" />
+      <div class='text'></div>
+    </a>
+    <a class='vtx' href='#fpv-gear'>
+      <img src="/images/banner/vtx-d6f3c2fd.png" alt="Vtx" />
+      <div class='text'></div>
+    </a>
+    <a class='hd-camera' href='#hd-camera'>
+      <img src="/images/banner/xiaomi-de36ae0c.png" alt="Xiaomi" />
+      <div class='text'>HD Camera</div>
+    </a>
+  </section>
+  <section id='welcome'>
+    <h2>
+      <a href='#welcome'>
+        <i class='fa fa-link'></i>
+        Ground School
+      </a>
+    </h2>
+    <h4>
+      all the basic info you need to decided what type of drone to build or buy
+    </h4>
+    <p>
+      When I started building and flying drones, I had to search the far corners of the interwebs to learn about all the different parts, software and configurations that are necessary to get a flying robot in the air. This guide attempts to be your entry-point to the world of drones. Consider it an ongoing work in progress, but I hope it helps. Leave a comment, question or suggestion at the bottom of this page and I'll do my best to help out.
+    </p>
+    <p>
+      Whether you're brand new to the hobby of RC or an expert, I'm excited you're here to learn more. I'll start this guide with a few general suggestions on the hobby then jump into the pros and cons of building your first drone vs buying one off-the-shelf, ready to go. From there, we'll explore the different parts, software and configurations necessary to build or repair your drone. I'll start with the most general topics and work my way into the details of each subject.
+    </p>
+    <p>
+      Drones in the media today are not necessarily portrayed in the most postive light. You've probably heard of "drone registration" and think that it may be difficult or illegal to fly. This however, is not the case. The fact is that while the FAA has attempted to require registration of pilots that fly drones weighing more than 250 grams, it is questionable if they have the legal authority to do so. You can read about <a href="http://www.dailydot.com/politics/faa-drone-registration-lawsuit/">pending litgation here</a>.
+    </p>
+    <p>
+      There is <a href="http://amablog.modelaircraft.org/amagov/2016/04/19/several-provisions-remain-senate-bill-undermining-aeromodeling/">a new FAA reauthorization bill</a> in congress right now, but the FAA's current charter, "The FAA Modernization and Reform Act of 2012," which lays out the "Special Rule for Model Aircraft" (also called section 336) protects the rights of pilots operating within the guidelines of "community based organizations." What this means for you is that even if you decide to register as a drone pilot with the FAA and to do so are required to agree to certain guidelines such as flying under 400 feet, you do not actually have to follow these suggestions. You can instead follow the rules of your community based organization. Airfield is a community based organization. You can <a href="#signup">sign up</a> for free at the bottom of this page.
+    </p>
+    <p>
+      You'll notice that I've hyperlinked some products to my favorite suppliers. These include a few China-direct hobby store websites such as banggood.com, gearbest.com, rctimer.com and myairbot.com. I also link to the <i class="fa fa-amazon"></i>mazon product where applicable. Generally you'll get better value (and free shipping) ordering from one of the China-direct websites, but shipping from these sites generally takes a week or more. Amazon makes sense if you want the product in a day or two. No matter what supplier you choose, your purchase of products via links on this page help support my work, and for that I am deeply grateful.
+    </p>
+    <h3 id='how-to-choose-a-drone'>
+      <a href='#how-to-choose-a-drone'>
+        <i class='fa fa-link'></i>
+        I want to fly. What do I buy?
+      </a>
+    </h3>
+    <p>
+      Before we start planning our drone building project, you should consider what you hope to get out of this endeavor. I primarily build what are considered First Person View (FPV) "mini" quadcopters, which have arms that span around `250mm and are meant for acrobatic (or "acro" mode, also called "manual" mode) flying. FPV describes any drone or RC aircraft that has a camera with a real-time video link back to the pilot that allows them to fly through the camera, giving the perspective of being in the vehicle. Acro flying is when the pilot is in manual control of the drone at all times as opposed to a guided mode of flight such as GPS, where the vehical is capable of taking off, flying around and landing all by itself. In acro mode, if there is a glitch with the radio control signal or the video signal drops out and the pilot can't see where you're going, the quadcopter will crash. If a failure like this occured with a with guided mode quadcopter, it would probably not crash, but instead just land itself neatly on the ground. It's important to have a guided mode quadcopter when you're carrying an expensive payload, like a camera. Most commercially available drones, intended primarly for aerial photography (like the <a href="http://www.banggood.com/DJI-Phantom-3-Professional-With-4K-Camera-Advanced-1080p-HD-RTF-p-973201.html?p=1G09211226617201502J">Phantom 3</a>) fly in guided mode.
+    </p>
+    <p>
+      Why then, you're probably thinking, would anyone want to fly in acro mode? The problem is that guided mode quadcopters do not give the sensation of flight, when you're flying them, they feel robotic, almost as if you're just stuck in the sky, looking down at whatever subject you're filming. Acro mode quadcopters however, give a sensational feeling of flight. The first time you strap on your goggles (we'll talk more about why video goggles are better than a TV monitor later) and launch your quadcopter into the air, you'll feel like you have wings and that you're flying around like a bird. This sensation is impossible to describe, so I suggest you find a friend who is an FPV quadcopter pilot and ask them to "ride along" while they fly! If they have an extra pair of goggles, you can watch as they fly around as if you were sitting next to them in the quadcopter.
+    </p>
+    <p>
+      The other advantage of acro flying is that it's fast! Guided mode quadcopters need to move slowly and methodically enough to ensure their sensors (GPS mostly) are accurate. The human pilot of an acro quadcopter can run circles around a guided mode quadcopter. Every time you hear about drone racing in the news, those girls and guys are flying ~250mm acro mode FPV quadcopters. You should also note that there are quadcopters that can be flown in either acro or a guided flight mode, but in general these are average in both modes and amazing at neither. If you're buying, not building, it's probably better to get the right kind of quadcopter for whatever you intend to do. If you're building, you can build an acro mode quadcopter, learn to fly, then add the sensors later (ie. GPS) if you want to do aerial photography in guided mode.
+    </p>
+    <p>
+      The other consideration to make is how much time and energy you have or want to invest in your drone. Building a flying robot is a rewarding endeavor and certainly possible without any previous knowledge of electronics, programming or robotics. It will however take a lot of work. It took me over 6 months of research, planning, flying practice with <a href="http://www.banggood.com/Cheerson-CX10-CX10-Mini-24G-4CH-6-Axis-LED-RC-Quadcopter-RTF-p-926614.html?p=1G09211226617201502J">my little drone</a>, building and configuring before I had a flying robot that performed reliably.
+    </p>
+    <p>
+      Going through this learning process is a lot of work, but it can be accelerated by asking a friend for help. You can turn months into days by asking a friend to help you order parts, build your first drone and learn how to fly on a buddy box. If you met us at <a href="http://makerfaire.com/maker/entry/55522/">Maker Faire 2016</a> or are in the SF Bay Area, consider joining one of <a href="http://www.meetup.com/find/?allMeetups=false&keywords=drone&radius=25&userFreeform=san+francisco&gcResults=San+Francisco%2C+CA%2C+USA%3AUS%3ACalifornia%3ASan+Francisco+County%3ASan+Francisco%3Anull%3Anull%3A37.7749295%3A-122.41941550000001&change=yes&sort=recommended&eventFilter=mysugg">the great meetups</a> in the area and <a href="#signup">sign up for my newsletter</a>. Maybe I'll organize some more meetups where we can all build together. Another advantage of going through the process of building your own quadcopter is that once you've done it, you'll be able to easily and inexpensively repair or replace the components you break throughout your flying career. Don't worry, it will happen. Flying robots are bound to fall out of the sky and when they do, you'll want to know how to disassemble, solder, glue, sew (just kidding, you probably won't need to know how to sew) and re-assemble your quadcopter to get flying again.
+    </p>
+    <h3 id='ready-to-fly'>
+      <a href='#ready-to-fly'>
+        <i class='fa fa-link'></i>
+        Ready To Fly
+      </a>
+    </h3>
+    <p>
+      If you're not looking to invest this kind of time learning about drones, electronics and robotics, but still want to get in the air, these are your best choices for either aerial photography or FPV flying. Also, be sure to read <a href="#batteries">the battery section</a> below, so you know how to handle your LiPo batteries.
+    </p>
+    <div class='row big-drone'>
+      <div class='col-md-6' id='phantom3-professional'>
+        <h3 class='text-center'>
+          <a href='http://www.banggood.com/DJI-Phantom-3-Professional-With-4K-Camera-Advanced-1080p-HD-RTF-p-973201.html?p=1G09211226617201502J' target='_blank'>DJI Phantom 3</a>
+          <a href='http://amzn.to/1XayFsJ' target='_blank'>
+            <i class='fa fa-amazon'></i>
+          </a>
+        </h3>
+        <a href='http://www.banggood.com/DJI-Phantom-3-Professional-With-4K-Camera-Advanced-1080p-HD-RTF-p-973201.html?p=1G09211226617201502J' target='_blank'>
+          <img src="/images/drones/phantom3-professional-8a62b08c.jpg" alt="Phantom3 professional" />
+        </a>
+        <div class='more'>
+          <label>Why?</label>
+          Everything is in the box, it just works and it takes amazing photos.
+        </div>
+        <div class='more'>
+          <label>What else?</label>
+          Buy some <a href="http://www.banggood.com/4500mAh-15_2V-4S-Intelligent-Flight-Battery-For-DJI-Phantom-3-Phantom-3-Standard-p-1027251.html?p=1G09211226617201502J">extra batteries</a> <a href="http://amzn.to/1OqHRYr"><i class="fa fa-amazon"></i></a>, they're expensive, but you'll want some spares since each one only gives about 10 to 20 minutes of flight time between charges.
+        </div>
+        <div class='more'>
+          <label>Cost:</label>
+          $800 to $1000 depending on what version and accessories you get
+        </div>
+      </div>
+      <div class='col-md-6' id='victory230'>
+        <h3 class='text-center'>
+          <a href='http://rctimer.com/product-1635.html#r-pNathanT' target='_blank'>
+            Rctimer Victory230
+          </a>
+        </h3>
+        <a href='http://rctimer.com/product-1635.html#r-pNathanT' target='_blank'>
+          <img src="/images/drones/victory230-81ec1d46.jpg" alt="Victory230" />
+        </a>
+        <div class='more'>
+          <label>Why?</label>
+          This miniquad is the best way to get into acro flying short of building your own FPV miniquad.
+        </div>
+        <div class='more'>
+          <label>What else?</label>
+          The Victory230 doesn't come with a radio reciever or transmitter, so get the <a href="http://www.banggood.com/FlySky-FS-i6-2_4G-6CH-AFHDS-RC-Transmitter-With-FS-iA6B-Receiver-p-983537.html?p=1G09211226617201502J">FlySky FS-i6</a>, which is the best value beginner radio set you can buy. Make sure you get the version with the <a href="http://www.banggood.com/Flysky-2_4G-6CH-FS-iA6B-Receiver-PPM-Output-With-iBus-Port-p-978603.html?p=1G09211226617201502J">FS-iA6B Receiver</a>, which has <a href="#rx-ppm">PPM</a>.
+        </div>
+        <div class='more'>
+          <label>Cost:</label>
+          About $240 for the drone, $50 for <a href="http://www.banggood.com/FlySky-FS-i6-2_4G-6CH-AFHDS-RC-Transmitter-With-FS-iA6B-Receiver-p-983537.html?p=1G09211226617201502J">the transmitter and receiver</a> and about $15 per <a href="http://www.banggood.com/ZOP-Power-11_1V-1800mAh-45C-Lipo-Battery-XT60-Plug-p-991825.html?p=1G09211226617201502J">battery</a>, for a total cost of around $300.
+        </div>
+        <div class='more'>
+          Read <a href="http://nathan.vertile.com/blog/2016/02/10/rctimer-victory230-fpv-miniquad/">the full setup guide and review for the Victory230 on Nathan's blog.</a>
+        </div>
+      </div>
+    </div>
+    <h3 id='practice'>
+      <a href='#practice'>
+        <i class='fa fa-link'></i>
+        Practice
+      </a>
+    </h3>
+    <p>
+      Before you put your expensive drone in the air, you learn how to fly in acro mode on a smaller drone. This isn't strictly necessary with drones like the Phantom that practically fly themselves, but if you're getting a mini-quad, learning to fly a smaller drone first will save you from lots of crashes and heartache. A small drone is much less expensive to crash.
+    </p>
+    <div class='row little-drone'>
+      <div class='col-md-6' id='bayangtoys-9x'>
+        <h3 class='text-center'>
+          <a href='http://shrsl.com/?~ch89' target='_blank'>
+            Bayang Toys 9x
+          </a>
+        </h3>
+        <div class='img text-center'>
+          <a href='http://shrsl.com/?~ch89' target='_blank'>
+            <img src="/images/drones/bayangtoys-9x-1d9f9c52.jpg" alt="Bayangtoys 9x" />
+          </a>
+        </div>
+        <div class='more'>
+          <label>Why?</label>
+          It's ready to fly out of the box, radio and battery included. It has the best flight characteristics of any micro-quadcopter and can survive almost any crash.
+        </div>
+        <div class='more'>
+          <label>What else?</label>
+          If you're partial to buying from companies in the USA, you could get the identical <a href="http://amzn.to/1Xbf23K">Blade Nano QX</a>.
+        </div>
+        <div class='more'>
+          <label>Cost:</label>
+          about $20, <a href="http://shrsl.com/?~chdn">extra batteries</a> are about $1.50
+        </div>
+      </div>
+      <div class='col-md-6' id='cx-10'>
+        <h3 class='text-center'>
+          <a href='http://www.banggood.com/Cheerson-CX10-CX10-Mini-24G-4CH-6-Axis-LED-RC-Quadcopter-RTF-p-926614.html?p=1G09211226617201502J' target='_blank'>Cheerson Cx-10</a>
+          <a href='http://amzn.to/1XayFsJ' target='_blank'>
+            <i class='fa fa-amazon'></i>
+          </a>
+        </h3>
+        <div class='img text-center'>
+          <a href='http://www.banggood.com/Cheerson-CX10-CX10-Mini-24G-4CH-6-Axis-LED-RC-Quadcopter-RTF-p-926614.html?p=1G09211226617201502J' target='_blank'>
+            <img src="/images/drones/cx-10-16a4802d.jpg" alt="Cx 10" />
+          </a>
+        </div>
+        <div class='more'>
+          <label>Why?</label>
+          It's ready to fly out of the box, radio and battery included. It has good flight characteristics and is readily available in the USA.
+        </div>
+        <div class='more'>
+          <label>Cost:</label>
+          about $15, <a href="http://www.banggood.com/Cheerson-CX10-RC-Quadcopter-Spare-Parts-37V-100mAh-Battery-CX10002-p-930476.html?p=1G09211226617201502J">extra batteries</a> are about $2.50
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id='frame'>
+    <h2>
+      <a href='#frame'>
+        <i class='fa fa-link'></i>
+      </a>
+      Frame
+    </h2>
+    <h4>
+      the drone's body
+    </h4>
+    <p>
+      Quadcopter frames come in all sizes, materials and shapes. I'll walk you through each of these factors to help you pick the best frame for whatever type of quadcopter you want to build.
+    </p>
+    <h3>
+      <a href='#frame-size'>
+        <i class='fa fa-link'></i>
+      </a>
+      Frame Size
+    </h3>
+    <p>
+      Frames are usually measured in millimeters diagonally from motor mount to motor mount. <a href="http://www.banggood.com/D1-Drone-Mini-Headless-Mode-2-4G-4CH-6Axis-RC-Quadcopter-RTF-p-986728.html?p=G09211226617201502J">The smallest drone</a> I've seen is about 33mm and <a href="http://rctimer.com/product-1135.html#r-pNathanT">the largest</a> is 1100mm (yes, there are drones big enough that someone can sit in it, but I digress). A Phantom 3 is 350mm and the standard size DIY acro quadcopter is 250mm. Within the past year, sub-200mm sizes have become popular, probably due to the fact that the pilot of any drone over 250g must register with the FAA. Note that drones are commonly named with the size in the name. E.g. a ZRM250 is probably 250mm, an X200 is probably 200mm, etc. The characters preceeding the size may or may not describe the shape of the quadcopter.
+    </p>
+    <p>
+      The size of the frame determines the maximum size of your propellors. The size of the frame you choose will determine your propellor size, which will determine your motor size which influences your ESCs' and battery's maximum current rating. We'll get into what all these other parts do and how they are related in a bit, but for now all you need to know is that bigger propellors yield greater efficiency. Smaller props are less efficient, but more responsive. Efficiency directly translates to longer flight time and responsiveness yields finer grain control.
+    </p>
+    <p>
+      For a camera platform, your primary concern is probably efficiency, so bigger props are generally better. Something like this (Julie - link?) F450 might make a good camera platform. For racing and fun flying a ~200mm quad that can fit 5" props is probably the best size as it will be very responsive and fun to fly while still maintaining good efficiency. If the space where you plan to fly is really cramped, you should consider getting a ~160mm frame that will fit 3" props.
+    </p>
+    <h3>
+      <a href='#frame-material'>
+        <i class='fa fa-link'></i>
+      </a>
+      Frame Material
+    </h3>
+    <p>
+      The three most common materials are Nylon, FR4 (also called Glass Fiber) and Carbon Fiber.
+    </p>
+    <p>
+      Nylon is a relatively new frame material. It is strong, light and should be relatively durable, but not as light or durable as Carbon Fiber. Back when 450mm size quadcopters were the most common, one would see this material on the arms of most quadcopters, like <a href="http://www.banggood.com/Diatone-White-Sheep-PCB-Version-FPV-Quadcopter-Frame-Kit-p-970933.html?p=G09211226617201502J">this 500mm quadcopter</a>. More recently entire frames have been made out of re-enforced nylon including the <a href="http://www.hobbyking.com/hobbyking/store/__86239__KINGKONG_260_FPV_Racer_Frame_Set_Pair_Kit_.html?p=G09211226617201502J">KingKong 260 frame set</a>, the new <a href="http://www.banggood.com/ZMR320-320MM-4-Aixs-Frame-Kit-with-LED-Light-for-DIY-FPV-Racing-p-1054624.html?p=G09211226617201502J">ZMR230</a> and <a href="http://www.banggood.com/Diatone-250-250mm-Nylon-PET-Color-Series-Muliticolor-Frame-Kit-For-Quadcopter-Multicopter-p-1000059.html?p=G09211226617201502J">Diatone 250</a>.
+    </p>
+    <p>
+      Glass fiber, fiberglass or FR4 are all the same material that printed circuit boards (PCBs) are made of. It is neither stronger nor lighter than carbon fiber, but it is probably the most economical option. Any frame with removable arms is better than one with arms permantenly attached to the body, since in a crash one of the most likely failure points is an arm. The classic <a href="http://www.banggood.com/ZMR250-H250-250mm-Fiberglass-Mini-Quadcopter-Multicopter-Frame-Kit-p-933189.html?p=G09211226617201502J">ZMR250</a> is a great beginner choice as the size and shape are very common and parts will be readily available.
+    </p>
+    <p>
+      Carbon fiber is the strongest and lightest material available. When you're buying a frame, be sure to get one that is "pure" or "3k" carbon fiber as some frames are FR4 covered in a thin layer of carbon fiber, which is only as good as the FR4 underneath. If you have a few extra dollars to spend, carbon fiber is well worth the extra cost. The carbon fiber version of the classic <a href="http://www.banggood.com/H250-ZMR250-250mm-Carbon-Fiber-Mini-Quadcopter-Multicopter-Frame-Kit-p-933185.html?p=G09211226617201502J">ZMR250</a> is about twice as much as the FR4 version, but the lighter and stronger frame means that it will take crashes much better and you'll spend much less time repairing your quadcopter, which is a huge win when you're learning to fly. Be careful when building your Carbon Fiber frame since Carbon Fiber is electrically conductive. Be careful not to let any components touch directly on the frame without covering them in heat shrink tubing or otherwise insulating them first. Another good trick is using nylon standoffs, nuts and bolts instead of metal to ensure that no components conduct electricity to the frame.
+    </p>
+    <p>
+      Any frame you pick, you'll need to make sure that the frame has the space necessary to mount the flight controller. Some flight controllers are designed to be taped to the frame with double sided tape. Other flight controllers have mounting holes. In this case make sure the frame has matching mounting holes. Most flight controllers use holes that are 30.5mm apart, square, and most frames with holes should match. Also, you'll need to make sure that the holes in the arms will fit the motors you plan to use. In most cases frames are designed for a specific motor size or set of motor sizes.
+    </p>
+    <p>
+      Other nice-to-have features include an integrated power distribution board (aka PDB), a camera mount, a place for the battery cable to rest and a hole for the video transmitter SMA adapter. Landing gear on small quadcopters is optional and not usually necessary, but if you'll be carrying a camera underneth the quadcopter, say on a gimbal, you'll need landing gear.
+    </p>
+    <h3>
+      <a href='#frame-shape'>
+        <i class='fa fa-link'></i>
+        Frame Shape
+      </a>
+    </h3>
+    <p>
+      Frames come in as many shapes as they do sizes. The most common configuration is an "X" shape, though the arms themselves rarely form an actual "X" shape, this just means that all motors are equidistant from each other. The body of the quadcopter is what varies most in shape. The primary consideration here is that there will be enough room to fit all the other components. A long-body shape as on the ZMR is the most common. The only downside of this shape is that the even distribution of weight along the entire axis of the quadcopter means that flips will take much more effort (and therefore be slower) than rolls. Quadcopters with a small, square body in the middle solve this at the cost of decreasing space dramatically. I suggest getting a mini-quad with a large body to begin.
+    </p>
+    <p>
+      A great feature on newer frame designs, such as the <a href="http://rctimer.com/product-1635.html#r-pNathanT">Rctimer U210</a> is a higher front section to hold and protect the camera, followed by a lower rear section, where the battery and antenna rest. This provides the best protection for all components and places the heaviest component (the battery) as close to the center of the quad as possible.
+    </p>
+  </section>
+  <section id='flight-controller'>
+    <h2>
+      <a href='#flight-controller'>
+        <i class='fa fa-link'></i>
+      </a>
+      Flight Controller
+    </h2>
+    <h4>the brain of the drone</h4>
+    <p>
+      A flight controller is a tiny, real-time computer with a variety of sensors attached. In this section we'll first talk about the flight controller hardware then we'll look briefly at the different software used by different flight controller hardware. Since the hardware components are common across most flight controllers, the differentiating factor is how many and how well various features have been implemented in software. While there are a few proprietary (closed source) flight controllers, most are open source, which is great for users and developers as it allows excellent, community developed and tested features and promotes inexpensive hardware. Since it doesn't really make sense to buy a closed-source flight controller, I'll focus exclusively on the excellent open source options available in the market today. If you don't want to read this whole section, just get one of the following flight controllers.
+    </p>
+    <div class='row flight-controller'>
+      <div class='col-md-6' id='f3'>
+        <h3 class='text-center'>
+          <a href='http://www.rctimer.com/product-1527.html/#r-pNathanT' target='_blank'>
+            Any F3 Flight Controller
+          </a>
+        </h3>
+        <div class='img text-center'>
+          <a href='http://www.rctimer.com/product-1527.html/#r-pNathanT' target='_blank'>
+            <img src="/images/flight-controllers/brf3-5dff22b8.jpg" alt="Brf3" />
+          </a>
+        </div>
+        <div class='more'>
+          <label>What is this best for?</label>
+          If you want to race or fly in acro mode. The BeeRotorF3 shown above has a built in on screen display (OSD).
+        </div>
+        <div class='more'>
+          <label>What else?</label>
+          It runs fast and has good firmware support and is excellent value.
+        </div>
+        <div class='more'>
+          <label>Cost:</label>
+          about $35 with an osd, <a href="">$18 without the OSD</a>
+        </div>
+      </div>
+      <div class='col-md-6' id='f4'>
+        <h3 class='text-center'>
+          <a href='http://www.banggood.com/OpenPilot-CC3D-Revolution-Revo-10DOF-STM32F4-Flight-Controller-Staight-Pin-p-1000068.html?p=G09211226617201502J' target='_blank'>OpenPilot Revolution F4</a>
+        </h3>
+        <div class='img text-center'>
+          <a href='http://www.banggood.com/OpenPilot-CC3D-Revolution-Revo-10DOF-STM32F4-Flight-Controller-Staight-Pin-p-1000068.html?p=G09211226617201502J' target='_blank'>
+            <img src="/images/flight-controllers/revo-b6ca1c88.jpg" alt="Revo" />
+          </a>
+        </div>
+        <div class='more'>
+          <label>What is this best for?</label>
+          An autonomous camera platform. It will also run RaceFlight if you want to fly in acro mode.
+        </div>
+        <div class='more'>
+          <label>What else?</label>
+          It's about double the price of an F3, but for autonomous flight, it's the perfect blend of price to features. It will also run the Multiwii fork, RaceFlight, if you want to fly in acro mode.
+        </div>
+        <div class='more'>
+          <label>Cost:</label>
+          about $45
+        </div>
+      </div>
+    </div>
+    <h3>
+      <a href='#flight-controller-clones'>
+        <i class='fa fa-link'></i>
+        Clones
+      </a>
+    </h3>
+    <p>
+      Speaking of inexpensive hardware, let me explain a little bit about what competing hardware manufacturers call "clones" and how to actually buy a flight controller. After you've read this section and decided what type of flight controller you want to buy, you'll go to look at some supplier websites only to find that there are many variations of different flight controllers available, some at 2x or 3x the cost of others. For example, the classic NAZE32 (which you shouldn't buy, you should get any STM32F3 or STM32F4 based flight controller instead), can be found under names such as the FLIP32, Skyline32, Eachine32, NAZE32 Mini, FLIP32 Mini, FLIP32+, Flip32 AIO, etc. These are essentially all the same as the NAZE32. The only difference is the type of extra sensors present on the board. Since the software is open source and the software defines how all the different components on the flight controller must be connected, it is possible for any hardware manufactuerer to make a board that works with any given firmware. Just because a board uses the same firmware HEX file as another board, it does not make a board inferior or a "clone." It may in fact be better than the original if it has more sensors or other capability.
+    </p>
+    <p>
+      When purchasing a board, don't be afraid to buy one that looks slightly different, has a different case, color or name than you've seen elsewhere. You'll likely get a fantastic board at a fraction of the original cost. Even if hardware manufacturers tell you otherwise, you're not buying a clone, because anyone (even you) can make a flight controller, the software is open source! The one thing you should watch out for, is hardware that is not open source (e.g. the SPRF3 Mini), as it won't get the community love and support that the open-source supported hardware will receive.
+    </p>
+    <h3>
+      <a href='#flight-controller-sensors'>
+        <i class='fa fa-link'></i>
+        Sensors
+      </a>
+    </h3>
+    <p>
+      I mentioned above the only difference between flight controllers is the processor and the different sensors. Let's dig into each of those to understand their role in keeping the drone in the air.
+    </p>
+    <p>
+      The only required sensor is a 3 axis gyroscope. The gyroscope (aka GYRO) allows the flight controller to understand it's tilt, roll and pitch angles. These angles are then translated into different power commands, sent to each motor thereby controlling the orientation and speed of the drone. A gyroscope alone is enough to keep the quadcopter stable in the air, however it will not allow the drone to "auto-level," that is, when you let go of the sticks, the quadcopter will continue flying in whatever direction it was last moving, it will not be able to level itself out and come to a stop.
+    </p>
+    <p>
+      The next most common sensor is a 3-axis accelerometer (aka ACC). When combined with the gyroscope, an accelerometer allows the quadcopter to auto-level. In auto-level mode, the quadcopter will level out and eventually stop when you let go of the controls. Most small, toy quadcopters fly only in this mode. If you're worried about buying a quadcopter without auto-level, don't fear, since the most common brand of gyroscope, InvenSense, packages a gyroscope with an accelerometer in what is called an inertial measurement unit (IMU). So, if you have a gyroscope, you probably have an accelerometer as well. Boards with these ACC+GYRO IMUs are also called "6 degree of freedom" boards.
+    </p>
+    <p>
+      Once we've fulfilled the requirement of an IMU, the next sensors to be added are usually a barometer (BARO) which will tell us how high the quadcopter is, a magnetometer (MAG, also called a compass) which will tell us heading realative to magnetic north then a GPS which will tell us our position on the planet, sometimes down to sub-3-meter accuracy.
+    </p>
+    <p>
+      Let's pause for a moment and talk about GPS. The primary supplier of GPS units is a company called <a href="https://www.u-blox.com/">ublox</a>. Their flagship module is currently the <a href="http://www.banggood.com/Ublox-NEO-M8N-Flight-Controller-GPS-with-Protective-Shell-for-PIX-PX4-Pixhawk-p-1005394.html?p=1G09211226617201502J">NEO-M8N</a> which is better than their older modules such as the <a href="http://www.banggood.com/Ublox-NEO-7M-Flight-Controller-GPS-Module-Built-in-Data-Memory-p-973621.html?p=1G09211226617201502J">NEO-7m</a> or the <a href="http://www.banggood.com/Ublox-NEO-6M-V2_3-GPS-Module-With-EEPROM-For-Flight-Control-p-940048.html?p=1G09211226617201502J">NEO-6M</a> because the M8N receives data from both US and Russian (GLONASS) satellites. What this means in practice is a faster, more accurate GPS lock, which is important in flight because without a precise GPS lock your quadcopter will be forced to land or if the proper checks are not implement in the software you're running, your quad could do something as terrible as <a href="https://www.youtube.com/results?search_query=quadcopter+flyaway">fly away</a>. You should buy a GPS with an attached magnetometer, even if you have one on your flight controller, in case your flight controller is too close to the power wires. Magnetometers are extremely sensitive to magnetic fields created by flowing electric current, so moving the magnetometer as far away from your power wires as possible will greatly reduce interference (remember, magnetic fields decay exponentially).
+    </p>
+    <p>
+      Finally, there are other components which are sometimes integrated with the flight controller. For example the <a href="">BeeRotorF3</a> has a built in On Screen Display (OSD) and the <a href="http://shop.myairbot.com/index.php/flip32f3aio-lite.html">FLIP32 AIO</a> has a built in power distribution board.
+    </p>
+    <h3>
+      <a href='#flight-controller-processor'>
+        <i class='fa fa-link'></i>
+        Processor
+      </a>
+    </h3>
+    <p>
+      The processor (also called MCU or microcontroller) is the core of your flight controller. It is what runs all the code, coordinates between the sensors, takes instructions from your radio receiver and ouputs commands to the motors' electronic speed controllers (ESCs). All modern flight controllers use 32-bit processors made by the company STMicroelectronics (STM). Within the STM line, there are different models. The base model is the STM32F1 (or just F1) processor, the STM32F3 (F3) processor is the same speed as the F1 but adds a few extra UART ports and a floating point unit (more on that later). The most advanced model currently available on a flight controller is the STM32F4 (F4). There is a new, faster processor, the STM32F7, but no flight controllers use this, yet. In terms of value, currently the best price point is an F3 processor.
+    </p>
+    <p>
+      Knowing that F4 sounds more awesome than F1, you may be tempted to go buy an F4 flight controller. However, if you do this, you'll only be able to run firmwares that support the F4 processor which may or may not be better than the firmware for an F3 processor. In order to understand flight controllers we need to understand the software (more accurately called firmware) that run on these tiny computers. The three main open source firmware projects are: MultiWii, OpenPilot and ArduPilot.
+    </p>
+    <h3>
+      <a href='#flight-controller-firmware'>
+        <i class='fa fa-link'></i>
+        MultiWii Firmware
+      </a>
+    </h3>
+    <p>
+      The popular BaseFlight, CleanFlight, BetaFlight, iNav and RaceFlight firmwares are all descendents (or "forks" in software lingo) of the MultiWii project. This is the most primative of all the projects as it does not use some software features such as a Real Time Operating System, Hardware Abstraction Layer or even a target-specific Makefile. That might not mean much to you unless you're a developer, but what it should mean to you as a user is that while the code is rough around the edges, it is also "close to the metal" which can mean better performance than other firmwares. This is why <a href="https://github.com/borisbstyle/betaflight/releases">BetaFlight</a>, currently the best MultiWii variant available, has excellent and ultra responsive flight characteristics right out of the box. MultiWii also lacks "ground station" software, which provides a realtime look at sensor information on a computer or mobile device during flight.
+    </p>
+    <p>
+      You might be wondering why there are so many different versions of MultiWii available? Other projects only have one main fork, but MultiWii is extremely fragmented. I won't get into the intricacies of the problem, but you should know that all these forks are generally not great. It would be nice if only one existed, but that's not the case, so you have to pick the best one for your specific case. Also know that, in general, any flight controller that is advertised to run one of these firmwares can run all of them. E.g. if your flight controller can run CleanFlight, it can run iNav. The exception is RaceFlight which can only run on F4 flight controllers. Also, no other forks except RaceFlight support F4 flight controllers yet.
+    </p>
+    <p>
+      So if you're going to fly MultiWii, how do you pick which fork to use? Here's the rundown:
+    </p>
+    <ul>
+      <li><a href="https://github.com/borisbstyle">Boris'</a> <a href="https://github.com/borisbstyle/betaflight">BetaFlight</a> flies the best. You should use this unless you have an F4 flight controller, but you'd be better off getting an F3 flight controller, just to be able to use Boris' fork. This awesomeness is a result of Boris being the best signals engineer working on any available fork.</li>
+      <li>If you have an F4 flight controller, you have to use RaceFlight, which itself is a fork of BetaFlight.</li>
+      <li>If you're super oldschool, you could use the original, BaseFlight, but you really should fly BetaFlight instead.</li>
+      <li>The best known "brand" in the MultiWii family is CleanFlight. I think this is because this was the first 32-bit MultiWii (BaseFlight) fork. There is an interesting story about how the developer of BaseFlight and the developer of CleanFlight didn't get along, but I digress. There is active development on CleanFlight, but Betaflight is better, you should use that instead.</li>
+    </ul>
+    <p>
+      You can find more info on BetaFlight on <a href="https://github.com/borisbstyle/betaflight/wiki">the wiki</a>, on the <a href="http://www.rcgroups.com/forums/showthread.php?t=2464844">the RCGroups BetaFlight thread</a> and most of the documentation on the <a href="https://github.com/cleanflight/cleanflight/tree/master/docs">CleanFlight documentation</a> still applies, since BetaFlight is essentially an improved version of CleanFlight.
+    </p>
+    <p>
+      If you're looking for a good setup guide, checkout my blog article on <a href="http://nathan.vertile.com/blog/2016/02/10/rctimer-victory230-fpv-miniquad/#flashing-betaflight">flashing the Victory230 with BetaFlight</a> which applies to flashing any F3 flight controller with BetaFlight.
+    </p>
+    <h3>
+      <a href='#flight-controller-openpilot'>
+        <i class='fa fa-link'></i>
+        OpenPilot / dRonin
+      </a>
+    </h3>
+    <p>
+      In the <a href="https://en.wikipedia.org/wiki/OpenPilot">OpenPilot family</a> of flight controllers are TauLabs, LibrePilot and dRonin. The actual OpenPilot code is no longer called OpenPilot, but has been taken over and re-branded by the dRonin team. As a developer, I'm super impressed by the team's management -- they actually have a board in charge, instead of a single person, and therefore no single point of failure. I'm also impressed by the deveopment environment, code quality, openness to accepting new features (called "pull requests") and general attitude toward other developers and users.
+    </p>
+    <p>
+      What the MultiWii family of flight controllers is lacking, OpenPilot has. This includes features for developers like a legit build systems, real time operating system and hardware abstraction layer. For users, we get GPS navigation and a full ground station with realtime telemetry. That's not to say dRonin is better, just different. From what I understand, while GPS navigation is possible in dRonin, it's acro-mode flight is not as responsive as BetaFlight (but really, BetaFlight is so awesome, what could be better? I don't think that's possible).
+    </p>
+    <p>
+      If you want to fly in guided mode, OpenPilot is a good middle ground. <a href="https://github.com/d-ronin/dRonin/tree/next/flight/targets">Supported flight controllers</a> are less expensive than ArduCopter and guided flight modes are good. Acro flight modes are also reasonably good. Also, with active development on the codebase by the dRonin team, hopefully <a href="https://github.com/d-ronin/dRonin/issues/9">more flight controller support</a> for the F3 family of flight controllers should be coming soon.
+    </p>
+    <h3>
+      <a href='#flight-controller-ArduPilot'>
+        <i class='fa fa-link'></i>
+        ArduPilot
+      </a>
+    </h3>
+    <p>
+      <a href="https://en.wikipedia.org/wiki/ArduPilot">ArduPilot</a> is the mother of all open source flight control software. Though the code is not shared between the other firmwares listed above, ArduPilot was the first and undoubtedly inspired some features in all other firmwares. ArduPilot, like MultiWii, started as an Arduino project and morphed into the excellent software it is today. ArduPilot is great for guided flight modes, but acro flight mode leaves something to be desired. ArduPilot has the most advanced ground station software (it actually has several choices for ground station software) and is supported on the ArduPilot 8-bit flight controller (not recommended) and the PX4 or PixHawk 32-bit flight controller (get the PX4/PixHawk). By the way, PX4 refers to a trimmed down version of the PixHawk hardware. Aside from having less connectors, it's basically the same as a PixHawk. Both flight controllers can run the same firmware.
+    </p>
+    <div class='row px4-vs-pixhawk'>
+      <div class='col-md-6'>
+        <a href='http://www.banggood.com/PX4-Pixhawk-Lite-V2_4_6-32Bits-Open-Source-Flight-Controller-for-QAV250-Multicopter-p-993849.html?p=1G09211226617201502J'>
+          <img src="/images/flight-controllers/px4-0d54d79c.jpg" alt="Px4" />
+        </a>
+      </div>
+      <div class='col-md-6'>
+        <a href='http://www.banggood.com/Pixhawk-PX4-2_4_8-Flight-Controller-32-Bit-ARM-PX4FMU-PX4IO-Combo-for-Multicopters-p-1040416.html?p=1G09211226617201502J'>
+          <img src="/images/flight-controllers/pixhawk-c6ac4a39.jpg" alt="Pixhawk" />
+        </a>
+      </div>
+    </div>
+    <p>
+      While dRonin/OpenPilot is almost as feature complete (if not more complete considering dRonin supports more flight controllers), the big advantage of flying ArduPilot is the huge community over at <a href="http://diydrones.com/">diydrones.com</a>. Flight controller support is lacking, really only the PixHawk or a PX4 variant is a viable option.
+    </p>
+    <p>
+      ArduCopter, the variant of ArduPilot for multi-rotors, is only a small slice of the ArduPilot ecosystem. ArduPilot is the way to go if you're looking for a firmware that can fly your drone or <a href="http://ardupilot.org/plane/index.html">autopilot your fixed wing plane</a> or even your (toy) <a href="http://ardupilot.org/rover/index.html">car</a>! You'll see in the ArduPilot documentation that it's also possible to run ArduPilot on the <a href="http://www.banggood.com/APM-Flight-Controller-Set-APM-2_6-6M-GPS-OSD-Radio-Telemetry-etc-p-920659.html?p=1G09211226617201502J">APM flight controller</a>, but don't do that! The APM has an 8-bit processor as opposed to the PX4 and PixHawk's modern 32-bit processor.
+    </p>
+    <p>
+      If you're thinking about building a flying camera platform, you should really just buy a Phantom 3, but if you want to carry something bigger than the Phantom's camera, checkout my <a href=http://nathan.vertile.com/blog/2016/01/29/flying-micro-4-3rds-camera/">Q600 build and setup guide</a>, <a href="http://nathan.vertile.com/blog/2016/01/29/rctimer-fixhawk-pixhawk-flashing-and-setup/">PixHawk configuration included!</a>.
+    </p>
+    <p>
+      Finally, you should know that there is one more flight control firmware I intentionally left out of this discussion, the developer-focused PX4 firmware. Yes, the PX4 firmware has the same name as the PX4 flight controller. This is the firmware by lead developer and now professor at ETH Zurich, Lorenz Meier, which was the originally intended firmware for the PX4. While no less development effort has been put towards the PixHawk / PX4, the project has since become corporate-sponsored and lots of development effort has been put toward developing software for the <a href="http://dev.px4.io/hardware-snapdragon.html">~$1000 proprietary SnapDragon flight controller</a> the outrageous cost and hard-to-acquire components on this board along with no support for more readily available hardware make the PX4 firmware an unattractive option for DIYers.
+    </p>
+  </section>
+  <section id='escs'>
+    <h2>
+      <a href='#escs'>
+        <i class='fa fa-link'></i>
+      </a>
+      ESCs
+    </h2>
+    <h4>electronic speed controllers (ESCs) take instructions from the flight controller and apply the specified amount of power to your motors</h4>
+    <p>
+      Every ESC has a power input where the battery will be connected, a signal wire that is used to send data from the flight controller to the ESC and three output wires that connect to your motors.
+    </p>
+    <p>
+      To power the ESC you can solder the battery connector's ground to the ground wire on all four ESCs and the power wire from the battery to all four power wires on the ESCs. There's nothing wrong with this approach, but most folks prefer to use a power distribution board (PDB) to connect the battery with all four ESCs. One advantage to this approach is that the PDB usually provides a regulated output (also called a battery elimination circuit or BEC) which supplies power at the correct voltage for the flight controller and video equipment, which are almost always 5v and 12v respectively.
+    </p>
+    <p>
+      If you're not using a PDB, you can buy ESCs which have an onboard battery elimination circuit, but higher-performance ESCs usually do not have built in BECs, so in general it's better to buy ESCs without a BEC and a PDB with the 5v and 12v outputs.
+    </p>
+    <p>
+      Much like flight controllers, ESCs also have processors and run firmware, in the case of ESCs though, our choices are much more limited. The two most common processor brands are Atmel and SiLabs. The two most common firmwares are SimonK and <a href="https://blhelisuite.wordpress.com/">BlHeli</a>. I wrote a <a href="http://nathan.vertile.com/blog/2015/12/06/blheli-esc-identification/#identify-your-esc-micro-controller">BlHeli ESC identification guide</a> which explains the differences between them, but in general, SiLabs' processor is better. The BlHeli firmware is currently being more actively developed and therefore is a better choice.
+    </p>
+    <p>
+      When reading about ESCs, you'll probably also hear about "Damped Light" which is what BlHeli calls active braking. This is espically important for quadcopters with larger propellors since the larger propellors create a larger "disk area" under the prop. This can make the quadcopter feel like it's floating in the air, even when you turn the throttle all the way down. If you enable damped light on your ESC, the speed controller will use power from the battery to power the motor in the opposite direction of the propellor. This stops the propellor from freely spinning as the quadcopter descends and makes the quad drop faster instead of float. This might not seem desirable at first, but the ability to descend quickly is important when flying under something, like a racing gate.
+    </p>
+    <p>
+      ESCs, like motors, are rated by how much current they can handle. Current is measured in amperes (or amps) and ESCs are therefore rated 10a (amps), 20a, 30a, etc. Now would be a great time to pause and read <a href="https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/voltage">this great overview of electrical units over on SparkFun's website</a>. Without diving into electrical details, you should know that ESCs are available in different current ratings including 10a, 12a, 20a or 30a. Choosing 20a ESCs is a safe choice for most quadcopters.
+    </p>
+    <p>
+      The actual current drawn by each motor is a function of the motor itself and the propellor attached. Let's talk about how those relate.
+    </p>
+  </section>
+  <section id='motors'>
+    <h2>
+      <a href='#motors'>
+        <i class='fa fa-link'></i>
+      </a>
+      Motors
+    </h2>
+    <p>
+      Motors are classified by size, how fast they spin, number of "stators" and how much voltage they can handle. You'll usually see some letters followed by a bunch of numbers like with the classic BE1806. The first two letters are the model, which are arbitrary, decided on by the manufacturer, but the numbers indicate the size of the motor. The problem is that these numbers mean different things to different manufacturers. They measure the width and the height of the motor, but sometimes that is the external diameter, sometimes it is internal. What you should know is that if you get a common motor size, like an 1106, 1306, 1806, 2204 or 2206, you'll probably get the same size motor, even if you order from different manufacturers. Also, motor mountine hole spacing will be the same across frames of a given size. For example any 130mm frame should fit 1106 size motors and a 250mm size frame will fit 1806, 2204 or 2206 size motors.
+    </p>
+    <p>
+      Most motors list a "KV" value which indicates how many revolutions per volt the motor will make when powered. The KV value will tell you two things: how big your prop can be and how high of a voltage battery you can use. Lower KV motors take bigger props, higher voltage batteries and are more efficient but less responsive. High KV motors spin faster, take smaller props and are more responsive but less efficient. Sub 200mm quads usually have high KV motors in the 2000-4000kv motor range. Mid-size mini-quads in the 200-300mm size usually use around 2000kv motors and larger quads take 1000kv motors and less.
+    </p>
+    <p>
+      Motor maximum voltage rating is related to the thickness of wire in the motor, how big the motor is and how fast it spins (KV rating). We'll talk about lipo <a href="#batteries">batteries</a> in a minute, but for now know that they are usually classifed by "S" rating, which indicates the number of cells. All lipo cells are nominally 3.7v, so a 2s lipo will be 3.7 x 2 volts = 7.4 volts. It's common for motors in the 2000-4000kv range to take 3 or 4s batteries. 2000kv motors can sometimes take up to 6s batteries, but their limit is usually 4s. Lower KV rated motors can take a high voltage battery. In big camera platforms that use 350kv motors, 6s or 8s batteries are common.
+    </p>
+    <p>
+      Finally, let's talk about stators. If you look inside of your motor you'll see coils of wire. The motor works by activating these coils of wire in sequence. This creates a moving magnetic field that interacts with rare earth magnets on the housing (also called the "bell") of the motor and spins the shaft which in turn spins the propellor. Stators are the coils of wire inside the motor and the number of stators varies by motor size and model. The number of stators is not really important except in a brushless motor for a gimbal. The number of stators determines the resolution of the motor. On brushless gimbal motors, having more stators is better. On normal quadcopter motors, the magnets in the bell and how well the wire is wrapped on each stator make more of a difference. High quality windings and magnets will yield a motor that delivers more thrust. If going fast is your thing, more thrust is always better.
+    </p>
+  </section>
+  <section id='props'>
+    <h2>
+      <a href='#props'>
+        <i class='fa fa-link'></i>
+      </a>
+      Props
+    </h2>
+    <p>
+      The factors to consider when purchasing propellors are size, number of blades and material. Propellors have come a long way in the last year. It used to be that the most widely available propellors, made by a company called GemFan, were thin, brittle and only had 2 blades. A company called DalProp revolutionized the propellor market about 6 months ago with their "indestructible" propellors. These propellors featured a much thicker design and stronger material. They then revoluationized the market again a few months ago with the DalProp V2, which is an even more durable two-blade propellor made out of an extremely resiliant shiny plastic. Many other propellor manufactuers have started using this material on tri and quad blade designs.
+    </p>
+    <p>
+      Having more blades on a propellor slightly increases the amount of thrust the propellor is able to produce. Efficiency goes down, but absolute thrust goes up, though not in a noticable way. I suggest getting a pile of DalProp V2 style two-blade propellors. Two blade propellors are far more resiliant that tri or quad blades and even while learning you'll have a hard time breaking these. You will want a few extra pairs so you can replace the dented and bent props from time to time.
+    </p>
+    <p>
+      Propellor size is a crucial choice since the propellor is ultimately responsible for how much current your motors will draw, what your ESC and battery current rating will need to be and how responsive and efficient your quadcopter will be. Don't worry though, the choice will be easier than you think. Your frame will limit the maximum size of the propellor, so as long as you get big enough motors, this shouldn't be a problem. Also, motors are also usually rated by battery cell count, prop size and maximum thrust, so finding this table for a given motor will help you determine the maximum size propellor you can use. The thing to watch out for is that it's generally a bad idea to run 1806 motors on 6" props with a 4s battery. Either stick with 5" props on 1806 size motors, use a 3s battery or upgrade to a 2200 size motor if you want to run 6" props on 4s.
+    </p>
+  </section>
+  <section id='batteries'>
+    <h2>
+      <a href='#batteries'>
+        <i class='fa fa-link'></i>
+      </a>
+      Batteries
+    </h2>
+    <h4>
+      fuel for your flying robot
+    </h4>
+    <p>
+      Lithium polymer (or LiPo) batteries, the same type of battery used in your laptop and electric cars, are used almost exclusively in flying robots. These batteries are interesting in that they have a very high discharge capacity, e.g. they can deliver lots of amps, which is awesome for our mini-quad which can, say with 20a escs, 1806 motors and 5" props, draw an instantanious 80amps. A batteries' "C" rating will tell you how many amps it can deliver. The "C" value must be multiplied by its capacity to find out its instantanious current rating. The capacity of the battery is rated in milliamp hours. A mid-capacity battery is 2200mah and a normal "C" rating is 25c. In this example 2.2amp hours x 25c = 55amps. We see that this battery is not rated to supply our quadcopter with the necessary current our quadcopter could require. So, we'll need a high-c rated battery. If we choose a smaller capacity battery, which will fit better on a mini-qadcopter, like an 1800mah, we should solve the equation 1.8 times x = 80. Solving for x we get a c-rating of 44. Just to be safe, we should get a battery rated for about 20% more current than we plan to draw, so calculating 44c x 1.2 ~= 53c, we see we'll need an 1800mah battery with a c-rating over 53c. Note that if you get a higher capacity (mah) battery, the required c-rating will be lower.
+    </p>
+    <p>
+      Proper handling of your batteries is crucial. If over-charged your batteries could catch fire and / or explode. If discharged too far, your batteries will be rendered useless, puff up and possibly explode. The safe voltage range that normal LiPo batteries can handle is 3.2 volts to 4.2 volts. That said, if you want to get longest useful life out of your batteries and the most cycles (charges and discharges), you should only discharge your batteries to 3.5v. While flying, this means your battery alarm should be set to 3.5v.
+    </p>
+  </section>
+  <section id='tx'>
+    <h2>
+      <a href='#tx'>
+        <i class='fa fa-link'></i>
+      </a>
+      Radio Transmitter
+    </h2>
+    <h4>
+      tell your quadcopter what it should be doing
+    </h4>
+    <p>
+      There are a wide variety of radio transmitters available on the market. The most notable brands are FrSky, FlySky, Spektrum, Graupner and JR. The brand you pick is important because the radio protocol between the transmitter and reciever is almost always brand specific. While all modern transmitters use the same radio frequency as the lower bands of your home WiFi (2.8ghz), the protocol, that is how the bits of data are actually translated, differ between brands.
+    </p>
+    <p>
+      When picking a transmitter, you should pick one that is within your budget and has a good transmission protocol. The other consideration to make is the cost of the receivers and different sizes of receivers available. The mini-quad racing gold standard is the FrSky Taranis, which uses FrSky's bulletproof 2.4ghz protocol.
+    </p>
+    <p>
+      Another nice feature to look for is a module bay on the back, which wil allow you to change the frequency and protocol your transmitter can utilize. The Taranis has a module bay as do other, less expensive, radios like the FlySky 9x. A module bay will allow you to use a 433mhz radio link (with a ham license). The advantage of 433mhz over 2.4ghz is that the lower frequency has a longer range, hence these 433mhz systems are generally called "long range" systems.
+    </p>
+    <p>
+      The basic function of a radio is to output some commands to your drone on some number of channels. You'll need at least 5 channels. 9 channels is more than enough for most uses.  Each channel ouputs a value between 1000 and 2000 representing an individual command. The first four channels are for the four directions you can command your quadcopter:  roll, pitch, yaw and throttle. The remaining channels are called auxilary channels (or AUX) and these channels are usually connected to switches which can be configured to control things like arming, flight mode, beeper, an OSD, and other features like BetaFlight's AirMode or SuperExpo.
+    </p>
+    <p>
+      Channel values are important, becuase you'll see configuration guides telling you to set settings like "min_check" and "max_check" to specific values. These values are in the 1000 to 2000 range corresponding to channel outputs from your transmitter. Therefore, it's important that as part of your setup, you check that your transmitter is actually outputting 1000 for the minimun value (or slightly above, like 1001) and 2000 for it's maximum value (or slightly below, say 1999). For example, when the quadcopter is sitting on the ground, motors off, sticks centered, the throttle value will be 1000 (which equates to 0) and all the other channels will be 1500, which is right in the middle of 1000 and 2000.
+    </p>
+  </section>
+  <section id='rx'>
+    <h2>
+      <a href='#rx'>
+        <i class='fa fa-link'></i>
+      </a>
+      Radio Receiver
+    </h2>
+    <h4>
+      how your quadcopter get's instructions
+    </h4>
+    <p>
+      You'll need to buy a receiver (or RX) that is compatible with the transmitter or module you're using, but it doesn't necessarily have to be the same brand. For example, checkout the <a href="nathan.vertile.com/blog/2016/02/09/airwolf-diy-frsky-rx-sbus/">DIY FrSky modules</a> if you're running FrSky. The most important feature to look for is that the receiver supports PPM (also called SUM PPM) or a serial interface like Spektrum Satellite, SBUS, IBUS or SUMD. All of these signals output all the channels from the receiver to the flight controller over a single wire. Avoid any PWM only receiver which outputs one channel per wire. Not only will wiring be easier, but the processing time required to handle the RX signal will be less and you'll save pins on the flight controller for other uses.
+    </p>
+  </section>
+  <section id='fpv-gear'>
+    <h2>
+      <a href='#fpv-gear'>
+        <i class='fa fa-link'></i>
+      </a>
+      FPV Gear
+    </h2>
+    <h4>
+      the eyes of the drone
+    </h4>
+    <p>
+      The First Person View (FPV) video system transmits realtime video from the quadcopter to your goggles or monitor. In the USA the FCC regulates wireless radio usage. Normally, when you use a device with a radio frequency transmitter, like your phone or a baby monitor, the device will show an FCC ID number on the back. This means that the device is certified by the FCC for use by "unlicensed" users. For devices that are not FCC certified, like most wireless video transmitters and receivers and even some radio transmitters and receivers, the user must be certified to use the device. The way to get certified is to pass the amateur radio (HAM) license exam. If you're at all interested in FPV and drones, I highly suggest you get ceritified. It will probably take a week or two of studying, I suggest using the ham test material on <a href="https://www.qrz.com/hamtest/">qrz.com</a>. The cost for the 35 question multiple choice test is $15.
+    </p>
+    <p>
+      With the legal requirements out of the way, let's talk about the different components of an FPV system. The video transmitter and receiver transmit analog video from the drone to your goggles or monitor. On the drone, the FPV camera, which is usually separate from the HD camera, is connected to the video transmitter. If you want to see system status on your monitor, overlayed on the flight video, an on screen display (OSD) can be wired inbetween the camera and the video transmitter.
+    </p>
+    <p>
+      The most common frequency used for FPV video signal is 5.8ghz. Other legal bands in the USA are 1.3ghz and 2.4ghz. However, there is only 1 usable channel on the 1.3ghz band and 2.4ghz video would interfere with the standard 2.4ghz radio control link. Also, the higher the frequency, the smaller the antenna, so the antennas for 5.8ghz video are much smaller than 1.3ghz, which is great for small FPV drones.
+    </p>
+    <p>
+      We should take a moment to talk about analog vs digital video and why racing drones use the much older standard and lower resolution analog video instead of digital video. Digital video means that the picture from the camera is encoded into ones and zeroes before it is sent over the air, then on the receiving end it is decoded from ones and zeroes back into the picture to display on the monitor. While higher resolution images are possible using this scheme, it takes time to do this encoding and decoding and this slight time delay creates a lag in the video, which is not good if you're flying 60mph upside-down. Minimizing latency is crucial. Enter analog video, which is lower resolution, but should have 0 latency. Even with an on screen display, the video signal timing is driven by the camera meaning that no extra processing is required to encode and transmit the signal.
+    </p>
+    <p>
+      Speaking of cameras, when choosing an FPV camera the two things to look at are resolution and wide dynamic range (WDR). Resolution is important, because the higher resolution the camera, the more time it will take for all of the camera's individual pixel sensors to be read and output as an analog signal. Analog cameras are not specified by pixel resolution, but by TV Lines (TVL). A 700tvl camera is the sweet spot between processing delay (the latency is almost 0) and quality (it's high enough quality to be usable). Wide dynamic range speaks to the camera's ability to handle a wide range of light conditions in the same image. For example, if you're looking at a sunset through your camera, the sun will be very bright and the ground will be very dark. A camera that has good dynamic range, will show the sun but it will not be washed out and the ground will not be too dark that it is impossible to see, but still show some detail.
+    </p>
+    <p>
+      Let's talk about antennas. Most if not all antennas you get with your video transmitter or receiver will be a single monopole "rubber duckie" or "whip" antenna. This antenna looks like a black plastic stick. The problem with these antennas is that they are not polarized, so they suffer from multipathing. Multipathing is when the radio wave signal reflects off of buildings, trees, cases or any surface in multiple diretions. This causes the one video signal from your quadcopter to take multiple paths to the receiver on your goggles or monitor. This is a problem, becuase all the paths are not the same length and therefore different copies of the one signal from your drone arrive at the reciver at different times. This confuses the reciever and could lead to a distored signal or the video going entirely black. The solution to this is using a circular polarized antenna like a mushroom, skew planar wheel, cloverleaf, helical, patch or quadrifilar helix. These different antenna shapes all generate a video signal that looks like a corkscrew, instead of a straight line, which means that when the signal bounces off of an object, it will then spiral into the ground or another direction, away from the reciever, making multipathing much less likely. The one trick with circularly polarized antennas is that the reciever and transmitter's polarization must match, so if you're using a right hand circular polarized antenna on your transmitter, you must use a right hand (as opposed to a left hand) circular polarized antenna on the reciever as well.
+    </p>
+    <p>
+      Going back to video quality for a moment, if you're seeing degraded analog video like "snow" in your goggles or the video is cutting in and out and you've already checked your antennas, the video may be suffering from noise on the power line. The video components of the system are very sensitive to a noisy power supply, that is fluctuations or a changes in voltage on the power line. To limit this noise, you may need to use an LC filter. On a quadcopter noise is usually introduced by the motors, so you may not notice this problem until you start flying. An LC filter is just an inductor and capacitor. This will take a power supply that is fluctuating and smooth it out so it is a constant voltage.
+    </p>
+  </section>
+  <section id='hd-camera'>
+    <h2>
+      <a href='#hd-camera'>
+        <i class='fa fa-link'></i>
+      </a>
+      HD Camera
+    </h2>
+    <p>
+      While it is possible to record the analog video feed with something like this little <a href="https://nathan.vertile.com/blog/2016/02/06/hmdvr-fpv-video-recorder/">video recorder</a>, to get nice 60fps HD video, you'll want an HD Camera. The <a href="http://nathan.vertile.com/blog/2015/05/08/xiaomi-yi-the-ant-camera/">Xiaomi Yi</a> (pronouced "shou-me yee") camera is the best value you can buy. It has two important features: 1080p (1920x1080) resolution and 60fps at this resolution. The Xiaomi Yi can also shoot 2k resolution at 30fps, but 60fps is better because it minimizes what can be described as a "jello" look in the video. Higher frames per second (FPS) means that there are more individual images taken over the same period of time. This also means that the 60fps video can be slowed down to 1/2 or 1/4 speed and still look fluid, which is really cool for those slow-mo shots.
+    </p>
+    <p>
+      You could of course buy a GoPro HD Camera, but the Xiaomi Yi is a fraction of the price and using <a href="http://nathan.vertile.com/blog/2015/05/08/xiaomi-yi-the-ant-camera/#wafflefpv">WaffleFPV's superview script</a> for the Xiaomi, you'll get better video.
+    </p>
+  </section>
+  <section id='tools'>
+    <h2>
+      <a href='#tools'>
+        <i class='fa fa-link'></i>
+      </a>
+      Tools
+    </h2>
+    <p>
+      Tools are key to a successful build experience. At the very least, you'll need a soldering iron, a metric wrench and metric hex driver set.
+    </p>
+  </section>
+  <section id='signup'>
+    <h2>
+      <a href='#signup'>
+        <i class='fa fa-link'></i>
+      </a>
+      Sign Up
+    </h2>
+    <h4>
+      join our community of builders and pilots
+    </h4>
+    <p>
+      Submit your email address below to join our community of builders and pilots for free, allowing you to fly your model aircraft following our community based  <a href="/guidelines">guidelines</a>, under the FAA Modernization and reform act of 2012's section 336 exception.
+    </p>
+    <div class='row'>
+      <div class='col-md-8 col-md-offset-2'>
+        <p class='hide' id='register-success'>
+          Thanks for registering, Happy Flying!
+        </p>
+        <form action='' id='register-form' method='POST' target='no-target'>
+          <div class='input-group input-group-lg'>
+            <input aria-label='email' autocomplete='off' class='form-control' id='email' name='entry.473793121' placeholder='[your email address]' tabindex='0' type='text'>
+            <div class='input-group-btn'>
+              <button class='btn btn-default' id='form-submit' type='submit'>Join</button>
+            </div>
+          </div>
+        </form>
+        <iframe id='no-target' name='no-target' src='#' style='visibility:hidden;height:0'></iframe>
+      </div>
+    </div>
+  </section>
+  <section id='more'>
+    <h2>
+      <a href='#more'>
+        <i class='fa fa-link'></i>
+      </a>
+      Want more?
+    </h2>
+    <p>
+      Checkout the <a href="https://nathan.vertile.com/blog">build logs</a> for specific drones.
+    </p>
+  </section>
+</div>
+
+  </body>
+</html>
